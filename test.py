@@ -35,6 +35,10 @@ def main():
             st.write('Le billet est un faux.')
         st.write(f'Probabilité d\'obtention d\'un vrai billet : {proba[1]}')
         st.write(f'Probabilité d\'obtention d\'un faux billet : {proba[0]}')
+        
+        # Ajout de la jauge pour afficher la probabilité
+        st.progress(proba[1])
+        st.write(f'Probabilité d\'obtention d\'un vrai billet : {proba[1]}')
 
 if __name__ == '__main__':
     main()
