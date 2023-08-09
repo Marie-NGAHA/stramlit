@@ -42,4 +42,4 @@ def main():
         st.write(f'Probabilité d\'obtention d\'un vrai billet : {proba[1]}')
 
 if __name__ == '__main__':
-    main
+    main()
