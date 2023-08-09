@@ -29,7 +29,7 @@ def main():
     if st.button('Prédire'):
         features = [diagonal, height_left, height_right, margin_low, margin_up, length]
         prediction, proba = predict_fake_bill(features)
-        if prediction == 0:
+        if prediction == True:
             st.write('Le billet est authentique.')
         else:
             st.write('Le billet est un faux.')
